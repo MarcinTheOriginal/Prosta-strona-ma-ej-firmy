@@ -19,7 +19,7 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: black .8;
+    background-color: rgba(0, 0, 0, .5);
     z-index: -1;
 }
 
@@ -39,4 +39,25 @@ nav .navbar-nav, nav .fa-bars {
 
 nav .fa-bars {
     padding: 1rem 2rem;
+}
+
+/* HEADER */
+
+header {
+    position: relative;
+    height: 60rem;
+    background-image: url('./img/jezioro.jpg');
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+}
+
+header .btn {
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.header-text {
+    font-size: 2.2rem;
 }
