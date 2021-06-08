@@ -73,3 +73,7 @@ header .btn {
 .plane-icon {
     font-size: 3rem;
 }
+
+#airplanes .accordion-button {
+    font-size: 1.8rem;
+}
