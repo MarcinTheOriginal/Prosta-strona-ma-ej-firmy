@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/0eecddc97b.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar-target">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light py-4 fixed-top">
+    <nav id="navbar-target" class="navbar navbar-expand-lg navbar-light bg-light py-4 fixed-top">
         <div class="container">
           <a class="navbar-brand px-4" href="#"><i class="fas fa-plane-departure blue-color"></i> Od śmigła!</a>
           <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,7 +41,7 @@
     </header>
 
     <main>
-      <section id="airplanes">
+      <section id="airplanes" class="scroll-fix">
         <div class="container py-5 planes-boxes">
           <div class="row text-container">
             <div class="col-12 col-md-6 col-lg-3">
@@ -74,8 +74,8 @@
             </div>
           </div>
         </div>
-
-        <div class="container about-info py-5 text-center" id="experience">
+        <div id="experience" class="scroll-fix">
+        <div class="container py-4 about-info text-center ">
           <div class="row">
             <div class="col">
               <p class="display-3 blue-color">Dlaczego możesz nam zaufać?</p>
@@ -123,16 +123,17 @@
             </div>
           </div>
         </div>
+        </div>
       </section>
-
-      <section id="pilots">
+      <div id="pilots" class="scroll-fix">
+      <section class="py-4" style="background-color: rgb(248,248,248)"> <!--żeby kolor nie nachodził na experience-->
         <div class="container text-center">
           <p class="display-3 blue-color">Grandziarze</p>
           <hr class="mt-4 mb-5 w-50 mx-auto">
           <p class="my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nihil quo, inventore, illo provident iure aspernatur, quidem dignissimos blanditiis fuga impedit enim nesciunt dolores facilis error dolore. Quae est praesentium odit cum a voluptas aliquid perferendis laboriosam itaque quo, sapiente soluta earum dolor corporis voluptatum magnam commodi dicta. Labore, velit.</p>
 
-          <div class="row row-cols-1 row-cols-md-2 g-4">
-            <div class="col">
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col mb-4">
               <div class="card">
                 <img src="/img/Zaneta.jpg" class="card-img-top" alt="Zdjęcie pilota Żanety">
                 <div class="card-body">
@@ -146,7 +147,7 @@
                 </div>
               </div>
             </div>
-            <div class="col">
+            <div class="col mb-4">
               <div class="card">
                 <img src="/img/juri.jpg" class="card-img-top" alt="Zdjęcie pilota Yuriego">
                 <div class="card-body">
@@ -160,12 +161,12 @@
                 </div>
               </div>
             </div>
-            <div class="col">
+            <div class="col mb-4">
               <div class="card">
                 <img src="/img/mrfullforce.jpg" class="card-img-top" alt="Zdjęcie pilota Full Force">
                 <div class="card-body">
                   <h3 class="card-title">Mr. Fuuulll Myyykkk</h3>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 </div>
                 <div class="card-footer row justify-content-around mx-0 py-3">
                   <a href="#" class="col"><i class="fab fa-facebook-f"></i></a>
@@ -174,7 +175,7 @@
                 </div>
               </div>
             </div>
-            <div class="col">
+            <div class="col mb-4">
               <div class="card">
                 <img src="/img/Wi Tu Low.jpg" class="card-img-top" alt="Zdjęcie pilota Wi Tu Low">
                 <div class="card-body">
@@ -192,7 +193,9 @@
 
         </div>
       </section>
-      <section id="contact" class="bg-dark text-light">
+      </div>
+      <div id="contact" class="scroll-fix">
+      <section class="bg-dark text-light">
         <div class="container text-center py-5">
           <p class="display-3 mb-lg-5">Umów się na lot!</p>
           <div class="row">
@@ -225,7 +228,12 @@
           </div>
         </div>
       </section>
+      </div>
     </main>
+
+    <footer class="bg-dark text-light border-top">
+      <p class="text-center py-4 m-0">&copy; 2021 Copytight</p>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
